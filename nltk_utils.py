@@ -26,9 +26,14 @@ def bag_of_words(tokenized_sentence, words):
 
 
 if __name__ == "__main__":
-    a = "i'm gonna be a millionaire!"
+    a = "helloo how are you"
     print(a)
     a = tokenize(a)
     print(a)
     a = [stem(x) for x in a]
     print(a)
+
+    sentence = ["helloo", "how", "are", "you"]
+    words = ["hi", "hello", "I", "you", "bye", "thank", "cool"]
+    bog = bag_of_words(a, words)
+    print (bog)
